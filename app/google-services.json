@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "693752008889",
+    "project_id": "dailyagenda-9f00c",
+    "storage_bucket": "dailyagenda-9f00c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693752008889:android:7fd2dbc5187de753c44b68",
+        "android_client_info": {
+          "package_name": "com.example.dailyagenda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx74FuIFRTSH-dwDsK9SuDexz_n4gVprM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

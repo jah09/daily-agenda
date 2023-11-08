@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitesmoke">
+
+        <LinearLayout
+            android:id="@+id/profileHolderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+          android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingStart="50dp"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="Profile"
+
+                android:textColor="@color/black"
+                android:textSize="26sp"
+
+
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/exit"
+
+
+                />
+        </LinearLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="157dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="158dp"
+            android:src="@drawable/profile_image"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileHolderLayout" />
+
+        <ImageView
+            android:id="@+id/editProfileImageButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="224dp"
+            android:background="@drawable/edit_image_style"
+            android:padding="5dp"
+            android:src="@drawable/baseline_edit_24_profile_image"
+            app:layout_constraintBottom_toBottomOf="@id/profile_image"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/profileFrag_txtVFNDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Jah Cool"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/profile_image" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="21dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileFrag_txtVFNDisplay">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Basic information"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="304dp" />
+
+            <ImageView
+                android:id="@+id/basicInfoImage"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/editprofnew"
+
+                />
+
+        </LinearLayout>
+
+        <!--First name edit -->
+        <EditText
+            android:id="@+id/editText_firstname"
+            android:layout_width="334dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="34dp"
+            android:background="@drawable/edit_inputstyle"
+            android:drawableLeft="@drawable/person"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:textCursorDrawable="@null"
+            android:enabled="false"
+            android:hint="First Name"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <!--last name edit -->
+        <EditText
+            android:id="@+id/editText_lastname"
+            android:layout_width="334dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="34dp"
+            android:background="@drawable/edit_inputstyle"
+            android:drawableLeft="@drawable/person"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Last Name"
+            android:textCursorDrawable="@null"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_firstname" />
+        <!--email edit -->
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="334dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="34dp"
+            android:background="@drawable/edit_inputstyle"
+            android:drawableLeft="@drawable/mail"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:textCursorDrawable="@null"
+            android:enabled="false"
+            android:hint="Email"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_lastname" />
+        <!--contac number edit -->
+        <EditText
+            android:id="@+id/editText_contactnumber"
+            android:layout_width="334dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="34dp"
+            android:background="@drawable/edit_inputstyle"
+            android:drawableLeft="@drawable/telephone"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:enabled="false"
+            android:textCursorDrawable="@null"
+            android:hint="Contact number"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/editText_email" />
+        <!--Account -->
+        <LinearLayout
+            android:id="@+id/linearLayout_account"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="21dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editText_contactnumber">
+
+            <TextView
+                android:id="@+id/textView_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Account information"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="304dp" />
+
+            <ImageView
+                android:id="@+id/imageView_AccountInfo"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/editprofnew"
+
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/profileFrag_updateButton"
+            android:layout_width="272dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="75dp"
+            android:background="@drawable/custom_dialog_button"
+            android:enabled="false"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout_account" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomOutlinedTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Unfocused state -->
+        <item name="android:textColorHint">@color/black</item>
+        <!-- Focused state -->
+        <item name="hintTextAppearance">@style/CustomHintText_Focused</item>
+    </style>
+
+    <style name="CustomHintText_Focused" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="CustomHintTextAppearance">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- Defined a new style with three items of color. -->
+    <style name="DemoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@color/black</item>
+
+    </style>
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+</resources>

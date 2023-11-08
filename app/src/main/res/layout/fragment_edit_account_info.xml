@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    tools:context=".EditAccountInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewEditAccountInfo_backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border_image"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textViewAccInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Account information"
+
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+
+
+            app:layout_constraintTop_toBottomOf="@+id/imageViewEditAccountInfo_backBtn" />
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/editText_username"
+            android:layout_width="334dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="34dp"
+            android:background="@drawable/edit_inputstyle"
+            android:drawableLeft="@drawable/person"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:textCursorDrawable="@null"
+            android:enabled="true"
+            android:hint="Username"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAccInfo" />
+
+        <!-- Old password -->
+
+        <EditText
+            android:id="@+id/editText_oldpassword"
+            android:layout_width="334dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="34dp"
+            android:background="@drawable/edit_inputstyle"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:drawableRight="@drawable/baseline_remove_red_eye_24"
+            android:textCursorDrawable="@null"
+            android:enabled="true"
+            android:hint="Old password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_username" />
+
+        <!-- New pass password -->
+
+        <EditText
+            android:id="@+id/editText_newpassword"
+            android:layout_width="334dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="34dp"
+            android:background="@drawable/edit_inputstyle"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:drawableRight="@drawable/baseline_remove_red_eye_24"
+            android:textCursorDrawable="@null"
+            android:enabled="true"
+            android:hint="New password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_oldpassword" />
+        <!-- Confirm New pass password -->
+        <EditText
+            android:id="@+id/editText_confirmNewpassword"
+            android:layout_width="334dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="34dp"
+            android:background="@drawable/edit_inputstyle"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:drawableRight="@drawable/baseline_remove_red_eye_24"
+            android:textCursorDrawable="@null"
+            android:enabled="true"
+            android:hint="Confirm new password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_newpassword" />
+
+        <Button
+            android:id="@+id/editAccFrag_updateButton"
+            android:layout_width="272dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="75dp"
+            android:background="@drawable/custom_dialog_button"
+            android:enabled="false"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_confirmNewpassword" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,1 @@
+This app is simple todo, basically CRUD in Android studio using firebase. No use of endpoint.

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DailyAgenda</string>
+    <string name="editextusername">EditextUsername</string>
+    <string name="sign_up"><u>Sign up</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

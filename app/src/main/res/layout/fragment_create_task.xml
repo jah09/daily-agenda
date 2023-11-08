@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/create_task_bg"
+    tools:context=".CreateTaskFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+      <ImageView
+          android:id="@+id/imageView_backBtn"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="16dp"
+          android:background="@drawable/border_image"
+          android:clickable="true"
+          android:paddingLeft="10dp"
+          android:onClick="imageBackbtn"
+          android:src="@drawable/baseline_arrow_back_ios_24"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/textView_add"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="88dp"
+          android:layout_marginEnd="130dp"
+          android:fontFamily="sans-serif-condensed-light"
+          android:text="Add "
+          android:textColor="@color/black"
+          android:textSize="35sp"
+          android:textStyle="bold"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/textView_addYourTask"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="23dp"
+          android:fontFamily="sans-serif-condensed-light"
+          android:text="your task here!"
+          android:textColor="@color/black"
+          android:textSize="28sp"
+          android:textStyle="bold"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView_add" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:gravity="center"
+
+          android:padding="15dp"
+          android:orientation="vertical"
+          android:layout_marginTop="60dp"
+          app:layout_constraintTop_toBottomOf="@+id/textView_addYourTask"
+          android:layout_height="300dp">
+
+          <EditText
+              android:id="@+id/editText_fragment_taskTitle"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:layout_marginTop="20dp"
+              android:background="@drawable/input_task_style"
+              android:drawableLeft="@drawable/baseline_create_24"
+              android:drawablePadding="10dp"
+              android:hint="Task Title"
+              android:inputType="text"
+              android:padding="10dp"
+              android:textColor="@color/black"
+              android:textColorHint="@color/black"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/taskDialog_dialogTitle" />
+          <EditText
+              android:id="@+id/editText_fragment_taskDescription"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:layout_marginTop="30dp"
+              android:background="@drawable/input_task_style"
+              android:drawableLeft="@drawable/baseline_create_24"
+              android:drawablePadding="10dp"
+              android:hint="Task Description"
+              android:inputType="text"
+              android:padding="10dp"
+              android:textColor="@color/black"
+              android:textColorHint="@color/black"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/editText_taskTitle" />
+
+          <Button
+              android:id="@+id/createTaskFragment_createTaskBtn"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:layout_marginStart="10dp"
+              android:layout_marginTop="50dp"
+              android:layout_marginEnd="10dp"
+              android:clickable="true"
+              android:background="@drawable/custom_dialog_button"
+                android:onClick="createTaskFunction"
+              android:text="Create"
+
+              android:textAllCaps="false"
+
+              android:textSize="21sp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/editText_taskDescription" />
+      </LinearLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
